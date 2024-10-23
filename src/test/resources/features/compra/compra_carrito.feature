@@ -1,6 +1,6 @@
 Feature: Carrito de compras
 
-  @green
+
   Scenario Outline: Agregar un producto con 2 unidades al carrito
     Given El cliente esta en la pagina principal de mundoflor
     When selecciona la categoria "<categoria>" y producto "<producto>" y agrega "<unidades>" unidades al carrito
