@@ -13,7 +13,6 @@ import net.serenitybdd.screenplay.questions.WebElementQuestion;
 import net.serenitybdd.screenplay.questions.page.TheWebPage;
 import starter.interactions.NavegarA;
 import starter.tasks.compra.AgregarProducto;
-import starter.tasks.search.LookForInformation;
 import starter.userinterfaces.compra.ProductosUI;
 
 public class CompraStepDefinitions {
