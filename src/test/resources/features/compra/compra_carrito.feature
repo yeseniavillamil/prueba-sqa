@@ -8,8 +8,8 @@ Feature: Carrito de compras
     Then el total de items en el carrito de compras sera de: "<total>"
     Examples:
       |categoria      |producto|unidades|total |
-  #    |  Amor         | 1       | 2     |   2   |
-  #    |  Cumpleaños   | 1       | 2     | 2   |
+      |  Amor         | 1       | 2     |   2   |
+      |  Cumpleaños   | 1       | 2     | 2   |
 
 
 @Eliminar

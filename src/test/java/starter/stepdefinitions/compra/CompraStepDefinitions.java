@@ -9,7 +9,10 @@ import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.actions.ScrollTo;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.questions.WebElementQuestion;
+import net.serenitybdd.screenplay.waits.Wait;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 import starter.interactions.NavegarA;
+import starter.interactions.esperas.Detener;
 import starter.tasks.compra.AgregarProducto;
 import starter.tasks.compra.EliminarProducto;
 import starter.userinterfaces.compra.ProductosUI;
@@ -50,7 +53,7 @@ public class CompraStepDefinitions {
     @Then("el total de items en el carrito de compras sera de: {string}")
     public void elCarritoDeComprasDebeMostrarElMensaje(String unidades) {
         theActorInTheSpotlight().attemptsTo(
-                Scroll.to(CarritoComprasUI.ESTADO_CARRITO)
+                Detener.por(3)
         );
         theActorInTheSpotlight().should(
                 GivenWhenThen.seeThat(
